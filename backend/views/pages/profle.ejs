@@ -1,10 +1,30 @@
 <!DOCTYPE HTML> 
 <html>
     <body>
-        <h1>Success</h1>
-        <p>
-            name : <%= name %><br />
-            email: <%= email %>
-        </p>
+        <div class="profile">
+            <h1 style="text-align: center">Profile Details</h1>
+            <p>
+                name : <%= name %><br />
+                email: <%= email %>
+            </p>
+        </div>
     </body>
 </html>
+
+<style>
+    .profile {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 35rem;
+        padding: 2.5rem;
+        padding-top: 1rem;
+        box-sizing: border-box;
+        border: 1px solid #dadce0;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        background: linear-gradient(150deg, #f731db, #4600f1 100%);
+    
+    }
+</style>
